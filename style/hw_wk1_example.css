@@ -1,0 +1,44 @@
+/* hw_wk1_example.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*reset*/
+
+.container {
+  padding-top: 50px;
+  max-width: 500px;
+}
+
+header{
+   background-color: #d3d3d3;
+   padding-left: 5%;
+}
+
+
+h1{
+   font-family: 'Raleway', sans-serif;
+}
+
+p{
+   font-family: 'Roboto', sans-serif;
+}
+
+ol {
+   font-family: 'Roboto', sans-serif;
+}
+
+.word-group {
+   padding-left: 5%;
+   font-family: 'Roboto', sans-serif;
+}
+
+#questions {
+   padding-left: 5%;
+   font-family: 'Roboto', sans-serif;
+}
+
+#story {
+   padding-left: 5%;
+   font-family: 'Roboto', sans-serif;
+}
+
