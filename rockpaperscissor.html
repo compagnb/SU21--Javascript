@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- this changes the title of the window -->
+      <title>Rock Paper Scissors</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="style/rockpaperscissor.css">
+   </head>
+   <body>
+      <div class="container" id="startcontainer">
+        <button id="startbutton">Start Game</button>
+      </div>
+      <script src="js/rockpaperscissor.js"></script>
+      <div class="container" id="endcontainer">
+        <div class="topcontainer">
+            <h1 id="gameh1"></h1>
+        </div>
+        <div class="gamecontainer">
+            <div class="playercontainer">
+                <h1 class="playerh1">Player</h1>
+                <div class="playerinformation">
+                    <div class="playerlogo">
+                        <img class="logo" src="img/user.png">
+                    </div>
+                    <div class="playerscore">
+                        <p class="score" id="playerscore">Score: 0</p>
+                    </div>
+                </div>
+                <div class="gameselections">
+                    <div class="gameselection" id="rockdiv">
+                        <p class="gameselectiontext" id="rockselection">Rock</p>
+                        <img class="selection" id ="rockimg" src="img/rock.png">
+                    </div>
+                    <div class="gameselection" id="paperdiv">
+                        <p class="gameselectiontext" id="paperselection">Paper</p>
+                        <img class="selection" id="paperimg" src="img/paper.png">
+                    </div>
+                    <div class="gameselection" id="scissorsdiv">
+                        <p class="gameselectiontext" id="scissorsselection">Scissors</p>
+                        <img class="selection" id="scissorsimg" src="img/scissors.png">
+                    </div>
+                </div>
+            </div>
+            <div class="playercontainer">
+                <h1 class="playerh1">Computer</h1>
+                <div class="playerinformation">
+                    <div class="playerlogo">
+                        <img class="logo" src="img/robot.png">
+                    </div>
+                    <div class="playerscore">
+                        <p class="score" id="computerscore">Score: 0</p>
+                    </div>
+                </div>
+                <div class="gameselections">
+                    <div class="gameselection" id="computerrockdiv">
+                        <p class="gameselectiontext">Rock</p>
+                        <img class="selection" src="img/rock.png">
+                    </div>
+                    <div class="gameselection" id="computerpaperdiv">
+                        <p class="gameselectiontext">Paper</p>
+                        <img class="selection" src="img/paper.png">
+                    </div>
+                    <div class="gameselection" id="computerscissorsdiv">
+                        <p class="gameselectiontext">Scissors</p>
+                        <img class="selection" src="img/scissors.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--         <div class="bottomcontainer" id="bottomcontainer">
+            <div class="winninglogodiv">
+                <img class="winninglogo" id="userwinslogo" src="img/user.png">
+                <img class="winninglogo" id="robotwinslogo" src="img/robot.png">
+            </div>
+            <p class="gameupdates"></p>
+            <a href="rockpaperscissor.html" id="endbutton">Play Again?</button>
+        </div> -->
+    </div>
+</body>
+</html>

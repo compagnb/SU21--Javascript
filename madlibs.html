@@ -1,0 +1,72 @@
+<!-- This is a statement that says to use the lastest and greatest HTML -->
+<!DOCTYPE html>
+
+<!-- html tag says that everything written in between it will be coded in HTML -->
+<html>
+	<!-- This is the head, whatever we need to think about goes in here. -->
+	<head>
+		<!-- this changes the title of the window -->
+		<title>Our First Homework</title>
+		<!-- this lets our code be written and translated as uniformly as possible across languages, etc. -->
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="style/reset.css"> -->
+		<link rel="stylesheet" type="text/css" href="style/hw_wk1_example.css">
+
+	</head>
+	<!-- This is body, this is where we put everything we want to be seen. -->
+	<body>
+		<header>
+			<h1>This is a Mad Libs Website Example</h1>
+			<p>For this assignment create a web page with two divs:
+				<ol>
+					<li>In the first you are to ask for a minimum of 5 words and a maximum of 10 words. These words can be nouns, verbs, adjectives, names, etc. Use IDs to give more information for the words submitted. </li>
+					<li>The second should contain the story that you will be using with the words provided. See the below example.</li>
+				</ol>
+			</p>
+		</header>
+		<!-- start words inquiry -->
+		<div id="questions">
+      <form action="#theStory" method="post" onsubmit="submitInputs();return false">
+        <h1>Please fill out the following!</h1>
+        <hr>
+          <div class="word-group">
+            <label for="person">Boy's Name</label>
+            <input id="person" type="text" placeholder="Enter a boy's name ..">
+          </div>
+          <div class="word-group">
+            <label for="adjective">Adjective</label>
+            <input id="adjective" type="text" placeholder="Enter an adjective ..">
+          </div>
+          <div class="word-group">
+            <label for="noun">Plural noun</label>
+            <input id="noun" type="text" placeholder="Enter a plural noun ..">
+          </div>
+          <div class="word-group">
+            <label for="insect">An insect, plural</label>
+            <input id="insect" type="text" placeholder="Enter an insect, plural ..">
+          </div>
+          <div class="word-group">
+            <label for="noun2">Plural noun</label>
+            <input id="noun2" type="text" placeholder="Enter a plural noun ..">
+          </div>
+          <div class="word-group">
+            <label for="verb">A verb ending in "s"</label>
+            <input id="verb" type="text" placeholder="Enter a verb ending in "s" ..">
+          </div>
+        	<button id="btn-click" type="submit" class="btn-primary">Generate!</button>
+        	<hr>
+      </div>
+      </form>
+      <!-- end words inquiry -->
+
+      <!-- start story -->
+      <div id="story">
+<!--         <h1>Mad with the Libs</h1>
+        <hr>
+        <h3>This is a story about<span class="person"></span>. They are so <span class="adjective"></span> and has big flat <span class="noun"></span>. When our <span class="insect"></span> meets, we disected a <span class="noun2"></span>. When we spend time together nearly <span class="verb"></span> out of my chair. </h3> -->
+      </div>
+      <!-- end story -->
+
+	</body>
+  <script  src="js/madlibs.js"></script>
+</html>
