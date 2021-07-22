@@ -9,7 +9,7 @@
 		<title>Our First Homework</title>
 		<!-- this lets our code be written and translated as uniformly as possible across languages, etc. -->
 		<meta charset="utf-8">
-		<!-- <link rel="stylesheet" type="text/css" href="style/reset.css"> -->
+<!-- 		<link rel="stylesheet" type="text/css" href="style/reset.css"> -->
 		<link rel="stylesheet" type="text/css" href="style/hw_wk1_example.css">
 	</head>
 	<!-- This is body, this is where we put everything we want to be seen. -->
@@ -25,15 +25,16 @@
 		</header>
 		<!-- start words inquiry -->
 		<div id="questions">
+      <form action="#story" method="post" onsubmit="getInput(); return false">
         <h1>Please fill out the following!</h1>
         <hr>
           <div class="word-group">
             <label for="person">Boy's Name</label>
-            <input for="person" type="text" placeholder="Enter a boy's name ..">
+            <input id="person" type="text" placeholder="Enter a boy's name ..">
           </div>
           <div class="word-group">
             <label for="adjective">Adjective</label>
-            <input for="adjective" type="text" placeholder="Enter an adjective ..">
+            <input id="adjective" type="text" placeholder="Enter an adjective ..">
           </div>
           <div class="word-group">
             <label for="noun">Plural noun</label>
@@ -53,15 +54,15 @@
           </div>
         	<button id="btn-click" type="submit" class="btn-primary">Generate!</button>
         	<hr>
+        </form>
       </div>
       <!-- end words inquiry -->
 
       <!-- start story -->
       <div id="story">
-        <h1>Mad with the Libs</h1>
-        <hr>
-        <h3>This is a story about<span class="person"></span>. They are so <span class="adjective"></span> and has big flat <span class="noun"></span>. When our <span class="insect"></span> meets, we disected a <span class="noun2"></span>. When we spend time together nearly <span class="verb"></span> out of my chair. </h3>
+
       </div>
       <!-- end story -->
 	</body>
+  <script src="js/wk2_madlibs.js"></script>
 </html>
