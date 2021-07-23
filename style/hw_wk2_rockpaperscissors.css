@@ -16,40 +16,6 @@ html,body{
     justify-content: center;
 }
 
-#startbutton {
-    min-width:100px;
-    height:50px;
-    margin-bottom: 150px;
-    text-transform: uppercase;
-    padding: 15px;
-    border: none;
-    outline: none;
-    font-weight: 400px;
-    font-size: 20px;
-    border-radius: 3px;
-    box-shadow: 4px 5px 0px;
-    border-bottom: 2px solid;
-    border-right: 1px solid;
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    transform: translate(-1%, -3%);
-  }
-
-#startbutton:hover {
-    background-color: lightgrey;
-    box-shadow: 3px 3px 1px;
-    border-bottom: 2px solid;
-    transform: translate(-1%, -1%);
-    transition: all 0.1s ease-in;
-}
-
-#startbutton:active {
-    box-shadow: none;
-    border-bottom-width: 2px;
-    transform: translate(3px, 4px);
-}
-
 .logo {
     height: 50px;
     width: 50px;
