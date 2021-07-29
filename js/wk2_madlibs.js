@@ -9,6 +9,10 @@ var verb="";
 // const boyName="";
 var story="";
 
+const populatedInputs={boyName:"Chris", adjective:"silly", pluralNoun: "frogs", insect:"mosquito", pluralNoun2:"boxes", verb:"run" };
+
+
+
 // Syntax of a function
 // function nameOfFuntion(parameters){
 
@@ -26,11 +30,34 @@ function getInput(){ //we want this to run when the user hits submit
 }
 
 function resetForm(){
-
+	document.getElementById('person').value="";
+	document.getElementById('adjective').value="";
+	document.getElementById('noun').value="";
+	document.getElementById('insect').value="";
+	document.getElementById('noun2').value="";
+	document.getElementById('verb').value="";
+	document.getElementById('story').innerHTML="";
 }
 
 function autoPopulate(){
-	
+	if(document.getElementById('person').value==""){
+		document.getElementById('person').value=populatedInputs.boyName;
+	}
+	if(document.getElementById('adjective').value==""){
+		document.getElementById('adjective').value=populatedInputs.adjective;	
+	}	
+	if(document.getElementById('noun').value==""){
+		document.getElementById('noun').value=populatedInputs.pluralNoun;
+	}
+	if(document.getElementById('insect').value==""){
+		document.getElementById('insect').value=populatedInputs.insect;
+	}
+	if(document.getElementById('pluralNoun2').value==""){
+		document.getElementById('noun2').value=populatedInputs.pluralNoun2;
+	}
+	if(document.getElementById('verb').value==""){
+		document.getElementById('verb').value=populatedInputs.verb;
+	}
 }
 
 function createStory(){
