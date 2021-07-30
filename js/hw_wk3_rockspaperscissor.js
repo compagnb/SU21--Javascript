@@ -12,10 +12,11 @@ btn.addEventListener('click', function(){
 });
 
 function hideEndContainerShowWinner() {
-    // In this function create a 2 variables for :
+    // In this function create 2 variables for :
     //     class gamecomtainer (.gamecontainer) using querySelector
     //     Id bottomcontainer using getElementByID.
     // Once the variables are created have the game container disappear.
 }
 
 // create similar to the above create variables for rockdiv, paperdiv, scissorsdiv, computerrockdiv, computerpaperdiv, computerscissorsdiv
+const rockSelected = document.querySelector("#rockdiv");
