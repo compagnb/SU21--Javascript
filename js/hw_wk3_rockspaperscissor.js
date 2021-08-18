@@ -50,8 +50,22 @@ function gameSelectionListener(event){
     }else if (element.classList.contains("gameselection") && element.id ===("paperdiv")){
         playRound(paper);
         console.log("paper submitted");
+    }else if(element.classList.contains("gameselectiontext") && element.id === ("paperselection")){
+        playRound(paper);
+        console.log("paper submitted");
+    }else if(element.classList.contains("selection") && element.id === ("paperimg")){
+        playRound(paper);
+        console.log("paper submitted");
+    }else if (element.classList.contains("gameselection") && element.id ===("scissorsdiv")){
+        playRound(scissors);
+        console.log("scissors submitted");
+    }else if(element.classList.contains("gameselectiontext") && element.id === ("scissorsselection")){
+        playRound(scissors);
+        console.log("scissors submitted");
+    }else if(element.classList.contains("selection") && element.id === ("scissorsimg")){
+        playRound(scissors);
+        console.log("scissors submitted");
     }
-    // homework finish paper, and complete scissors
 
 
 
@@ -104,15 +118,71 @@ function playRound(playerSelection){
         scissorsSelected.style.backgroundColor = "white";
         if (computerSelection === "rock"){
             console.log("Tied!!");
+            playerScore++;
+            computerScore++;
+            console.log(playerScore);
+            console.log(computerScore);
+            const curcomputerscore = document.querySelector("#computerscore").innerHTML = `Score: ${computerScore}`;
+            const curplayerscore = document.querySelector("#playerscore").innerHTML = `Score: ${playerScore}`;
         }else if(computerSelection === "paper"){
             console.log("Computer Wins!");
+            computerScore++;
+            console.log(playerScore);
+            console.log(computerScore);
+            const curcomputerscore = document.querySelector("#computerscore").innerHTML = `Score: ${computerScore}`;
+            const curplayerscore = document.querySelector("#playerscore").innerHTML = `Score: ${playerScore}`;
         }else if(computerSelection === "scissors"){
             console.log("Players Wins!");
+            playerScore++;
+            console.log(playerScore);
+            console.log(computerScore);
+            const curcomputerscore = document.querySelector("#computerscore").innerHTML = `Score: ${computerScore}`;
+            const curplayerscore = document.querySelector("#playerscore").innerHTML = `Score: ${playerScore}`;
         }
     }else if(playerSelectionLowercase === "paper"){
+        rockSelected.style.backgroundColor = "white";
+        paperSelected.style.backgroundColor = "#fc5868";
+        scissorsSelected.style.backgroundColor = "white";
+        if (computerSelection === "paper"){
+            console.log("Tied!!");
+            playerScore++;
+            computerScore++;
+            const curcomputerscore = document.querySelector("#computerscore").innerHTML = `Score: ${computerScore}`;
+            const curplayerscore = document.querySelector("#playerscore").innerHTML = `Score: ${playerScore}`;
+        }else if(computerSelection === "scissors"){
+            console.log("Computer Wins!");
+            computerScore++;
+            const curcomputerscore = document.querySelector("#computerscore").innerHTML = `Score: ${computerScore}`;
+            const curplayerscore = document.querySelector("#playerscore").innerHTML = `Score: ${playerScore}`;
+        }else if(computerSelection === "rock"){
+            console.log("Players Wins!");
+            playerScore++;
+            const curcomputerscore = document.querySelector("#computerscore").innerHTML = `Score: ${computerScore}`;
+            const curplayerscore = document.querySelector("#playerscore").innerHTML = `Score: ${playerScore}`;
+        }
 
     }else if(playerSelectionLowercase === "scissors"){
+        rockSelected.style.backgroundColor = "white";
+        paperSelected.style.backgroundColor = "white";
+        scissorsSelected.style.backgroundColor ="#fc5868";
+        if (computerSelection === "scissors"){
+            console.log("Tied!!");
+            playerScore++;
+            computerScore++;
+            const curcomputerscore = document.querySelector("#computerscore").innerHTML = `Score: ${computerScore}`;
+            const curplayerscore = document.querySelector("#playerscore").innerHTML = `Score: ${playerScore}`;
+        }else if(computerSelection === "rock"){
+            console.log("Computer Wins!");
+            computerScore++;
+            const curcomputerscore = document.querySelector("#computerscore").innerHTML = `Score: ${computerScore}`;
+            const curplayerscore = document.querySelector("#playerscore").innerHTML = `Score: ${playerScore}`;
+        }else if(computerSelection === "paper"){
+            console.log("Players Wins!");
+            playerScore++;
+            const curcomputerscore = document.querySelector("#computerscore").innerHTML = `Score: ${computerScore}`;
+            const curplayerscore = document.querySelector("#playerscore").innerHTML = `Score: ${playerScore}`;
         
+        }
     }
 
 

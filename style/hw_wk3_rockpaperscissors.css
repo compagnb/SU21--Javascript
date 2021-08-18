@@ -3,6 +3,7 @@
 body {
     /* Main background image with styling */
     background-image: url("../img/background.jpg");
+    /*background-color: ;*/
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
